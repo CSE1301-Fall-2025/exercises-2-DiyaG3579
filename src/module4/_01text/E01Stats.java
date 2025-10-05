@@ -21,14 +21,12 @@ public class E01Stats {
 		chooser.showOpenDialog(null);
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
-		
-		
-		
+				
 		//Using scanner to read from a file
 		//Modify and add to the code below
 		//to complete the exercise
 		while(in.hasNextDouble()) {
 			System.out.println(in.nextDouble());
-		}
 	}
 }
+} //HELPPPPPPPPPPPPPPPP

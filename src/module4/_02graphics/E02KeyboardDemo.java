@@ -11,7 +11,7 @@ public class E02KeyboardDemo {
 	public static void main(String[] args) {
 		
 		//Wait until the user presses a key, checking periodically
-		while(!StdDraw.hasNextKeyTyped()) {
+		while (!StdDraw.hasNextKeyTyped()) {
 			StdDraw.pause(100);
 		}
 		
@@ -21,8 +21,11 @@ public class E02KeyboardDemo {
 			System.out.println("Yes");
 		} else if(got == 'n') {
 			System.out.println("No");
-		} else {
+		} else if (got == 'w'){
 			System.out.println("What?");
+		}
+		  else {
+			System.out.println("Now its getting dicey");
 		}
 	}
 	
