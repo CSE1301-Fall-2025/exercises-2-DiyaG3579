@@ -21,12 +21,37 @@ public class E01Stats {
 		chooser.showOpenDialog(null);
 		File f = new File(chooser.getSelectedFile().getPath());
 		Scanner in = new Scanner(f); //making Scanner with a File
-				
+
 		//Using scanner to read from a file
 		//Modify and add to the code below
 		//to complete the exercise
+		int g = 0;
 		while(in.hasNextDouble()) {
-			System.out.println(in.nextDouble());
-	}
+			double h = (in.nextDouble());
+			g++;
+		}
+
+		Scanner in2 = new Scanner(f);
+		double [] data = new double [g];
+		while(in2.hasNextDouble()) {
+			for (int i = 0; i < data.length; i++) {
+		 		data[i] = in2.nextDouble();
+		 		//System.out.println(data[i]);
+		 	}
+		}
+		double max = 0.0;
+		double min = 1000.0;
+		
+		for (int i = 0; i < data.length; i++) {
+			if (data[i] > max) {
+				max = data[i];
+			}
+			if (data[i] < min) {
+				min = data[i];
+			}
+		}
+		System.out.println("Max: " + max + " Min: " + min);
+
+		
 }
-} //HELPPPPPPPPPPPPPPPP
+} 
