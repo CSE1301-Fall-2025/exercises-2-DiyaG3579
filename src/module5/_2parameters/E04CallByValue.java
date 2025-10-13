@@ -18,3 +18,5 @@ public class E04CallByValue {
 		System.out.println(y);
 	}
 }
+
+//No because y is not connnected to x itself in anyway (I think that all that it does is initalize y)??? <-- Ask about this

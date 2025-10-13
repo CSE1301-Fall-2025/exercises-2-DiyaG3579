@@ -6,7 +6,9 @@ package module5._2parameters;
  * code within the main method.
  */
 public class E05ShippingCostCalculator {
-	
+	public static void calculateShipping(double weight, double cost){
+		
+	}
 	public static void main(String[] args) {
 
 		double weight1, weight2, weight3;

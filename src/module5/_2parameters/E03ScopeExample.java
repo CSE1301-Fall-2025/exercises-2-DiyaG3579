@@ -8,7 +8,7 @@ public class E03ScopeExample {
 	
 	public static void inchesToCentimeters(double inches) {
 		double centimeters = inches * 2.54;
-		System.out.println(inches + "-->" + centimeters);
+		System.out.println(inches + " in -->" + centimeters + " cm");
 	}
 
 	public static void main(String[] args) {
