@@ -51,6 +51,8 @@ public class E01Stats {
 			}
 		}
 		System.out.println("Max: " + max + " Min: " + min);
+		in.close();
+		in2.close();
 
 		
 }
