@@ -13,6 +13,6 @@ public class E02FarmerSong {
 		refrain();
 		refrain();
 		System.out.println("Hi-ho the derry-o");
-		System.out.println("The farmer in the dell");
+		refrain();
 	}
 }

@@ -1,4 +1,5 @@
 package module5._3return;
+import java.util.Scanner;
 
 /*
  * Exercise: Write a method randomNumberInRange() that takes in two
@@ -7,9 +8,18 @@ package module5._3return;
  * from the main method.
  */
 public class E04RandomNumberInRange {
-	//add your method here
+	public static int randomNumberInRange(int min, int max) {
+		return (int)((Math.random() * (max-min) ) + min);
+	}
 
 	public static void main(String args[]) {
-		//test your method by calling it
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Please enter a minimum value");
+		int min = scan.nextInt();
+		System.out.println("Please enter a maximum value");
+		int max = scan.nextInt();
+		System.out.println("--------------------------------");
+		System.out.println(randomNumberInRange(min,max));
+		scan.close();
 	}
 }

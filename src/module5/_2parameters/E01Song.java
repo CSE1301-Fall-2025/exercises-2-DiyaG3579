@@ -24,6 +24,7 @@ public class E01Song {
 		verse( "cow" , "moo" );
 		verse( "duck" , "quack" );
 		verse("pig", "oink");
+		verse("cat", "meow");
 	}
 }
 

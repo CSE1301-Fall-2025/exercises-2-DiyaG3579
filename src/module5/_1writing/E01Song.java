@@ -6,7 +6,7 @@ package module5._1writing;
  */
 public class E01Song {
 	// The chorus method
-	public static void chorus() {
+	public static void chorus() {  //Takes no parameters (Nothing in the parenthesis)
 		System.out.println("I'm looking over a four-leaf clover");
 		System.out.println("That I overlooked before");
 	}

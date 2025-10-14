@@ -1,4 +1,5 @@
 package module5._3return;
+import java.util.Scanner;
 
 /*
  * A pedometer estimates that taking 2000 steps is the same as walking
@@ -7,13 +8,17 @@ package module5._3return;
  * the method from the main() method to test a few values.
  */
 public class E03StepCounter {
-    
+
+    public static double convertToMiles(int steps) {
+        return steps/2000.0;
+    }
 	//add convertToMiles method here
 
     public static void main(String[] args) {
-       
-    	//System.out.println("500 steps is equal to " + convertToMiles(500) + " miles");
-       //add 2 more method calls here for 2000 and 3000 steps.
-
+        Scanner scan = new Scanner(System.in);
+        System.out.println("How many steps have you taken");
+        int step = scan.nextInt();
+        System.out.println(step + " steps is equivalent to " + convertToMiles(step) + " miles");
+        scan.close();
     }
 }

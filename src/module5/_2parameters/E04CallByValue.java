@@ -19,4 +19,5 @@ public class E04CallByValue {
 	}
 }
 
-//No because y is not connnected to x itself in anyway (I think that all that it does is initalize y)??? <-- Ask about this
+//No because the two functions are running separately. X is dependent on y not the other way around. Y does not change just because 
+//it is not being changed
